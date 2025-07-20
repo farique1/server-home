@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 320">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="160" y1="9.74" x2="160" y2="313.23" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#bababa"/>
+      <stop offset="1" stop-color="#7a7a7a"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="160" y1="32.99" x2="160" y2="288.57" gradientUnits="userSpaceOnUse">
+      <stop offset=".6" stop-color="#fff"/>
+      <stop offset="1" stop-color="#b3b3b3"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="160" y1="58.23" x2="160" y2="116.2" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ad0000"/>
+      <stop offset="1" stop-color="#e30000"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="160" y1="49.09" x2="160" y2="267.2" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#949494"/>
+      <stop offset=".99" stop-color="#e6e6e6"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <rect class="cls-4" width="320" height="320"/>
+      <rect class="cls-1" x="32.21" y="32.21" width="255.58" height="255.58" rx="23.14" ry="23.14"/>
+      <path class="cls-3" d="M158.05,62.39v45.35c0,7.24-6.08,13.01-13.31,12.62l-83.8-4.52c-6.7-.36-11.95-5.9-11.95-12.62v-36.31c0-6.71,5.25-12.25,11.95-12.62l83.8-4.52c7.23-.39,13.31,5.37,13.31,12.62ZM259.07,54.29l-83.8-4.52c-7.23-.39-13.31,5.37-13.31,12.62v45.35c0,7.24,6.08,13.01,13.31,12.62l83.8-4.52c6.7-.36,11.95-5.9,11.95-12.62v-36.31c0-6.71-5.25-12.25-11.95-12.62Z"/>
+      <path class="cls-2" d="M219.17,194.85h-23.59V62.67c0-8.57-6.95-15.52-15.52-15.52h-40.13c-8.57,0-15.52,6.95-15.52,15.52v132.17h-23.59c-8.38,0-12.58,10.14-6.65,16.07l59.17,59.17c3.68,3.68,9.63,3.68,13.31,0l59.17-59.17c5.93-5.93,1.73-16.07-6.65-16.07Z"/>
+    </g>
+  </g>
+</svg>

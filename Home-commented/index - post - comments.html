@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Below are the page title, favicon and CSS file -->
+  <title>Server Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="images/server-icon.png">
+</head>
+<body>
+
+  <!-- The header-row and title classes control the appearance of the title section -->
+  <div class="header-row">
+    <div class="title">
+      <!-- The logo image -->
+      <img src="images/servergray-icon.png" alt="Server Icon" />
+      <!-- The header title -->
+      <span>Server Home</span>
+    </div>
+    <!-- The time-display class is the clock on the top right. Controlled by JavaScript -->
+    <div class="time-display" id="time"></div>
+  </div>
+  <!-- The header ends here -->
+
+  <!-- panels class define the dark section that contain the app buttons and monitor items -->
+  <div class="panels">
+    <!-- The collapsible class expand and collapses the panels. It is controlled by the JavaScript -->
+    <button type="button" class="collapsible"><img src="images/collapse-image.png" alt="collapse"></button>
+    <!-- The content class is the class that the collapsible class collapses and expands -->
+    <div class="content">
+      <!-- The title of the panel. -->
+      <!-- There are two of them because they are superimposed with opacity and overlay -->
+      <!-- To give a better visual effect -->
+      <div class="category-text-base">Monitor</div>
+      <div class="category-text">Monitor</div>
+
+      <!-- Monitor class is the background containing the monitored item -->
+      <div class="monitor">
+        <!-- The m-text is the class for the name of the monitored item -->
+        <div class="m-text">Chip<br>Temp</div>
+        <!-- The m-value is the class for the value of the monitored item -->
+        <!-- The id is used by the JavaScript to update the text with the item value -->
+        <div id="mbt" class="m-value"></div>
+        <!-- The m-unity is the class for the unity of the monitored item -->
+        <div class="m-unity">C</div>
+      </div>
+
+      <!-- This block just repeats with little differences for each monitored item -->
+      <!-- New monitored items can be added with new blocks and new respective JavaScript code -->
+      <!-- The monitoring data is obtained trough the data.json file of the Libre Hardware Monitor web interface -->
+      <div class="monitor">
+        <div class="m-text">CPU<br>Temp</div>
+        <div id="cput" class="m-value"></div>
+        <div class="m-unity">C</div>
+      </div>
+
+      <div class="monitor">
+        <div class="m-text">CPU<br>Load</div>
+        <div id="cpul" class="m-value"></div>
+        <div class="m-unity">%</div>
+      </div>
+
+      <div class="monitor">
+        <div class="m-text">GPU<br>Load</div>
+        <div id="gpul" class="m-value"></div>
+        <div class="m-unity">%</div>
+      </div>
+
+      <div class="monitor">
+        <div class="m-text">Mem<br>Used</div>
+        <div id="meml" class="m-value"></div>
+        <div class="m-unity">%</div>
+      </div>
+
+      <div class="monitor">
+        <div class="m-text">V Mem<br>Load</div>
+        <div id="vmeml" class="m-value"></div>
+        <div class="m-unity">%</div>
+      </div>
+
+      <div class="monitor">
+        <div class="m-text">SSD<br>Temp</div>
+        <div id="ssdt" class="m-value"></div>
+        <div class="m-unity">C</div>
+      </div>
+
+      <div class="monitor">
+        <div class="m-text">SSD<br>Used</div>
+        <div id="ssdl" class="m-value"></div>
+        <div class="m-unity">%</div>
+      </div>
+
+      <div class="monitor">
+        <div class="m-text">WiFi<br>Up</div>
+        <div id="wifiu" class="m-value"></div>
+        <!-- The WiFi has an id on the unity so it can be updated with k (KB) or m (MB) -->
+        <div id="wifiu-u" class="m-unity"></div>
+      </div>
+
+      <div class="monitor">
+        <div class="m-text">WiFi<br>Down</div>
+        <div id="wifid" class="m-value"></div>
+        <div id="wifid-u" class="m-unity"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- The panels class and its features repeats for each section -->
+  <!-- To make a new section just repeat the panel block, change the name and add buttons inside -->
+  <div class="panels">
+    <button type="button" class="collapsible"><img src="images/collapse-image.png" alt="collapse"></button>
+    <div class="content">
+        <div class="category-text-base">Section 1</div>
+        <div class="category-text">Section 1</div>
+
+        
+        <!-- The project-link class holds the app buttons, its characteristics and features -->
+        <!-- Below are two buttons without comment to give a better feel of their structure -->
+        <!-- On the next panel there is a button with all the features explained -->
+
+        <!-- Here is a button with almost no information -->
+        <a class="project-link" href="http://ip:port">
+          <img src="images/first-icon.png" alt="First Application">
+          <div class="text">
+            <span>First</span>
+          </div>
+        </a>
+        <!-- The button ens here -->
+
+        <!-- And here is a button with all the information it can have -->
+        <a class="project-link" href="http://ip:port">
+          <div class="detail">tool tip info here</div>
+          <div class="feature-icons">
+            <img src="images/different-port.png" alt="Different Port">
+            <img src="images/different-ip.png" alt="Different IP">
+            <img src="images/external-site.png" alt="External Site">
+            <img src="images/new-page.png" alt="New Page">
+          </div>
+          <div id="second-timeout" class="timeout"></div>
+          <img src="images/second-icon.png" alt="Second Application">
+          <div class="text">
+            <span>Second<br>Application</span>
+            <span class="widget" id="n-second">widget info here</span>
+          </div>
+        </a>
+        <!-- The button ends here -->
+
+      </div>
+    </div>
+    <!-- The panel ends here -->
+
+  <!-- Another panel block, another section -->
+  <div class="panels">
+    <button type="button" class="collapsible"><img src="images/collapse-image.png" alt="collapse"></button>
+      <div class="content">
+        <div class="category-text-base">Section 2</div>
+        <div class="category-text">Section 2</div>
+
+        <!-- To add new app buttons just add a new project-link block inside a panel -->
+        <!-- The href tag is the link to the app, service, folder or whatever you want to access -->
+        <a class="project-link" href="http://ip:port">
+          <!-- The detail class is the hint that appears when hovering over the button -->
+          <div class="detail">tool tip info here</div>
+          <!-- Some buttons have a feature-icons class to tell their behavior: -->
+          <div class="feature-icons">
+            <!-- They are not functional just labels. to add new ones just copy them here -->
+            <!-- I've made 4 feature icons indicating: -->
+            <!-- different port, different IP, internet site and open on another window -->
+            <!-- Just use the one you want and delete the others  -->
+            <img src="images/different-port.png" alt="Different Port">
+            <img src="images/different-ip.png" alt="Different IP">
+            <img src="images/external-site.png" alt="External Site">
+            <img src="images/new-page.png" alt="New Page">
+          </div>
+          <!-- Some buttons have a div to show if they are offline, it is controlled by JavaScript -->
+          <!-- The id string is used by a JavaScript function to turn on or of this div -->
+          <div id="third-timeout" class="timeout"></div>
+          <!-- This is the icon of the button and a text to appear if the image fails to load -->
+          <img src="images/third-icon.png" alt="Third Application">
+          <!-- the text class is the actual text of the button. the <br> tag is a linefeed -->
+          <div class="text">
+            <span>Third<br>Application</span>
+            <!-- The widget class is the text below the main button text. They are updated by the JS -->
+            <!-- I have a Python script (not in this repo) that modifies the javascript and so the class content. -->
+            <!-- JS gets the span by its id and replaces the text -->
+            <!-- You can use it changing the text there or comenting the JS and entering the text here -->
+            <span class="widget" id="n-third">updated by JS</span>
+          </div>
+        </a>
+
+      <!-- Another button inside a panel -->
+        <a class="project-link" href="http://ip:port" target="_blank">
+          <div class="detail">tool tip info here</div>
+          <div class="feature-icons">
+            <img src="images/new-page.png" alt="New Page">
+            <img src="images/different-port.png" alt="Different Port">
+          </div>  
+          <img src="images/fourth-icon.png" alt="Fourth Application">
+          <div class="text">
+            <span>Fourth<br>Application</span>
+            <span class="widget" id="n-fourth">widget info here</span>
+          </div>
+        </a>  
+
+      </div>
+    </div>
+    <!-- The panel ends here -->
+
+</body>
+</html>
+
+<script>
+// here are the JavaScript that controls some of the HTML functionality
+
+// This section is used by the external Python to update the widget classes
+// The Python script is not available right now
+// The content here will replace the content of the class on the HTML above
+// If you comment a line here, the text on the class will be shown
+document.getElementById("n-second").textContent = "Replaced by JS"
+document.getElementById("n-third").textContent = "Replaced by JS"
+document.getElementById("n-fourth").textContent = "Replaced by JS"
+
+// This function controls the expanse and collapse of the panels
+// The first set of parameters on the if are the default expanded state
+// and the second are the collapsed state parameters
+// The expanded parameters are duplicated on the CSS file
+// content.style.maxHeight is what controls the state of the collapse
+// If it is '0px' the panel is collapsed, if not ('fit-content' in this case) it is expanded 
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight == "0px"){
+      content.style.maxHeight = "fit-content";
+      content.style.paddingTop = "40px";
+      content.style.paddingBottom = "20px";
+    } else {
+      content.style.maxHeight = "0px";
+      content.style.paddingTop = "50px";
+      content.style.paddingBottom = "0px";
+    }
+  });
+}
+
+// This function controls the clock
+// You should replace pt-br and America/Recife with wherever you are
+function updateTime() {
+  const now = new Date();
+  const formattedDate = now.toLocaleDateString("pt-br", { timeZone: 'America/Recife', hour12: false });
+  const formattedTime = now.toLocaleTimeString("pt-br", { hour12: false });
+  document.getElementById("time").textContent = `${formattedDate}\n${formattedTime}`;
+}  
+
+// This is the function that get the data.json from the Libre Hardware Monitor web interface
+// and parse it to show the information on the monitor section
+// Enter the <ip> and <port> to your Libre hardware monitor installation + /data.json
+// Remember to set up the Libre Hardware Monitor web server accordingly
+const url = "http://ip:port/data.json";
+async function getData() {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+    
+    // here we get the data on the response variable
+    const json = await response.json();
+    // console.log(json);
+
+    // And we keep on parsing it
+    const server = json.Children[0]
+
+    // The next line is not used, it gets the title of the data. It is here just for reference
+    // var MtempT = server.Children[0].Children[0].Children[1].Children[0].Text
+
+    // This line gets the data itself, in this case the chipset temperature
+    var MtempV = server.Children[0].Children[0].Children[1].Children[0].Value;
+    // This line updates the appropriate HTML div with the id=mbt
+    // The data from the json comes with unity (i.e. "40,0 °C")
+    // so the .slice() function crops the last 5 characters leaving just the "40" (in this example)
+    document.getElementById("mbt").textContent = `${MtempV.slice(0, -5)}`;
+
+    // and so forth for all other items
+    var CtempV = server.Children[1].Children[3].Children[0].Value;
+    document.getElementById("cput").textContent = `${CtempV.slice(0, -5)}`;
+
+    var CloadV = server.Children[1].Children[4].Children[0].Value;
+    // The percentile values have one less character to crop (",0 %")
+    document.getElementById("cpul").textContent = `${CloadV.slice(0, -4)}`;
+
+    var LGPUV = server.Children[3].Children[1].Children[0].Value;
+    document.getElementById("gpul").textContent = `${LGPUV.slice(0, -4)}`;
+
+    var MmemV = server.Children[2].Children[0].Children[0].Value;
+    document.getElementById("meml").textContent = `${MmemV.slice(0, -4)}`;
+
+    var VmemV = server.Children[2].Children[0].Children[1].Value;
+    document.getElementById("vmeml").textContent = `\n${VmemV.slice(0, -4)}`;
+
+    var HtempV = server.Children[4].Children[0].Children[0].Value;
+    document.getElementById("ssdt").textContent = `${HtempV.slice(0, -5)}`;
+
+    var HloadV = server.Children[4].Children[1].Children[0].Value;
+    document.getElementById("ssdl").textContent = `${HloadV.slice(0, -4)}`;
+
+    var WuplV = server.Children[11].Children[2].Children[0].Value;
+    document.getElementById("wifiu").textContent = `${WuplV.slice(0, -7)}`;
+    // The wifi item also process the unity because it varies (kb/s, mb/s, ...)
+    // It calculates the length of the text and get the fourth character from the end
+    document.getElementById("wifiu-u").textContent = `${WuplV[WuplV.length - 4]}`;
+
+    var WdowV = server.Children[11].Children[2].Children[1].Value;
+    document.getElementById("wifid").textContent = `${WdowV.slice(0, -7)}`;
+    document.getElementById("wifid-u").textContent = `${WdowV[WdowV.length - 4]}`;
+
+} catch (error) {
+    console.error(error.message);
+  }
+}
+
+// This is the function that checks if the apps are online
+// If everything here is experimental, this is the king of them
+// I made this in a hurry just to have this feature sort of available
+// I think it works but it is a very simple and rudimentary solution
+async function checkServiceStatus(service, url) {
+  // First we turn the status color indicator to the 'checking' mode
+  document.getElementById(service).style.backgroundColor = "#ffffff33"
+  try {
+    // We try to access the app. The response is opaque but if there is any response at all
+    // it is probably online. Maybe not running or healthy but online
+    // The 5000 is the amount of time (5 seconds) it will wait before declaring the app offline
+    const response = await fetch(url, {mode: 'no-cors', signal: AbortSignal.timeout(5000)});
+    if (response) {
+      // If there is a response, turn off the offline indicator on the corresponding button
+      // The service variable is the id of the HTML div of the indicator, each button has one
+      // it is provided by the function call along with the ip of the app
+      document.getElementById(service).style.backgroundColor = "#00000000"
+      return true;
+    } else {
+      return false;
+    }
+  } catch (e) {
+      // If the app does not respond within 5 seconds, a TimeoutError will be generated
+      if (e.name === "TimeoutError") {
+          // In this case, the display of the corresponding div offline indicator will be turned on
+          document.getElementById(service).style.backgroundColor = "#00000088"
+        }
+      }
+    }
+
+// This function is called periodically.
+// It calls all the actual functions to check if the apps are up or down
+function check_health() {
+  // Here are the functions to call each app to check if they are up or down
+  // The first parameter is the id of the HTML div to be turned on or off
+  // The second parameter is the ip and port of the app being tested
+  checkServiceStatus('second-timeout', 'http://ip:port');
+  // Add one for each app to be tested
+  checkServiceStatus('third-timeout', 'http://ip:port');
+  checkServiceStatus('fourth-timeout', 'http://ip:port');
+}
+
+// This function is called periodically.
+// 1 second in this case. It contains:
+function runOnInterval() {
+  // The function to update the time
+  updateTime();
+  // And the function to update the monitored data
+  getData();
+}
+
+// This sets the functions and periodicity they are called
+// 1 second for the time and monitor
+setInterval(runOnInterval, 1000);
+// and 60 seconds for the health check
+setInterval(check_health, 60000)
+
+// Run the periodic functions once right at the start.
+check_health()
+runOnInterval();
+</script>

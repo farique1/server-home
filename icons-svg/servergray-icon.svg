@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 320">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="4" y1="160" x2="316" y2="160" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity=".3"/>
+      <stop offset=".09" stop-color="#fff" stop-opacity=".32"/>
+      <stop offset=".19" stop-color="#fff" stop-opacity=".37"/>
+      <stop offset=".3" stop-color="#fff" stop-opacity=".46"/>
+      <stop offset=".41" stop-color="#fff" stop-opacity=".58"/>
+      <stop offset=".5" stop-color="#fff" stop-opacity=".7"/>
+      <stop offset=".57" stop-color="#fff" stop-opacity=".62"/>
+      <stop offset=".69" stop-color="#fff" stop-opacity=".48"/>
+      <stop offset=".81" stop-color="#fff" stop-opacity=".38"/>
+      <stop offset=".91" stop-color="#fff" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".3"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="44.2" y1="160" x2="275.8" y2="160" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity=".4"/>
+      <stop offset=".08" stop-color="#fff" stop-opacity=".42"/>
+      <stop offset=".17" stop-color="#fff" stop-opacity=".47"/>
+      <stop offset=".27" stop-color="#fff" stop-opacity=".56"/>
+      <stop offset=".37" stop-color="#fff" stop-opacity=".68"/>
+      <stop offset=".47" stop-color="#fff" stop-opacity=".84"/>
+      <stop offset=".5" stop-color="#fff" stop-opacity=".9"/>
+      <stop offset=".5" stop-color="#fff" stop-opacity=".89"/>
+      <stop offset=".62" stop-color="#fff" stop-opacity=".72"/>
+      <stop offset=".73" stop-color="#fff" stop-opacity=".58"/>
+      <stop offset=".83" stop-color="#fff" stop-opacity=".48"/>
+      <stop offset=".92" stop-color="#fff" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".4"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <g>
+        <rect class="cls-3" x="4" y="4" width="312" height="312" rx="46" ry="46"/>
+        <path class="cls-2" d="M270,8c23.16,0,42,18.84,42,42v220c0,23.16-18.84,42-42,42H50c-23.16,0-42-18.84-42-42V50c0-23.16,18.84-42,42-42h220M270,0H50C22.39,0,0,22.39,0,50v220c0,27.61,22.39,50,50,50h220c27.61,0,50-22.39,50-50V50c0-27.61-22.39-50-50-50h0Z"/>
+      </g>
+      <path class="cls-1" d="M255.5,79.65H64.5c-11.22,0-20.31-9.09-20.31-20.31v-1.39c0-11.22,9.09-20.31,20.31-20.31h190.99c11.22,0,20.31,9.09,20.31,20.31v1.39c0,11.22-9.09,20.31-20.31,20.31ZM275.8,116.28v-1.39c0-11.22-9.09-20.31-20.31-20.31H64.5c-11.22,0-20.31,9.09-20.31,20.31v1.39c0,11.22,9.09,20.31,20.31,20.31h190.99c11.22,0,20.31-9.09,20.31-20.31ZM275.8,173.22v-1.39c0-11.22-9.09-20.31-20.31-20.31H64.5c-11.22,0-20.31,9.09-20.31,20.31v1.39c0,11.22,9.09,20.31,20.31,20.31h190.99c11.22,0,20.31-9.09,20.31-20.31ZM160,218.08c-17.75,0-32.14,14.39-32.14,32.14s14.39,32.14,32.14,32.14,32.14-14.39,32.14-32.14-14.39-32.14-32.14-32.14Z"/>
+    </g>
+  </g>
+</svg>

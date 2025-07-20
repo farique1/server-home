@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 320">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: .07;
+      }
+
+      .cls-2 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-3 {
+        fill: #ab931d;
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient-2);
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="-407.74" cy="-641.22" fx="-407.74" fy="-641.22" r="53.71" gradientTransform="translate(2198.72 3366.12) scale(5)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".46" stop-color="#fdfdfd"/>
+      <stop offset=".62" stop-color="#f6f6f6"/>
+      <stop offset=".74" stop-color="#eaeaea"/>
+      <stop offset=".83" stop-color="#d9d9d9"/>
+      <stop offset=".91" stop-color="#c3c3c3"/>
+      <stop offset=".98" stop-color="#a9a9a9"/>
+      <stop offset="1" stop-color="#a1a1a1"/>
+    </radialGradient>
+    <linearGradient id="linear-gradient" x1="267.54" y1="267.54" x2="54.34" y2="54.34" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1f1f1f"/>
+      <stop offset=".24" stop-color="#282828"/>
+      <stop offset=".65" stop-color="#424242"/>
+      <stop offset="1" stop-color="#5d5d5d"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="226.71" y1="226.71" x2="94.46" y2="94.46" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6f6f6f"/>
+      <stop offset=".16" stop-color="#787878"/>
+      <stop offset=".42" stop-color="#929292"/>
+      <stop offset=".76" stop-color="#bbb"/>
+      <stop offset="1" stop-color="#dedede"/>
+    </linearGradient>
+    <filter id="drop-shadow-1" x="61.47" y="61.11" width="198" height="198" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="9.29"/>
+      <feFlood flood-color="#000" flood-opacity=".5"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <path class="cls-2" d="M320,320H0V0h320v320Z"/>
+      <g>
+        <g>
+          <rect class="cls-5" x="49.55" y="49.55" width="220.9" height="220.9" rx="9.93" ry="9.93"/>
+          <polygon class="cls-3" points="89.42 262.55 57.45 262.55 57.45 230.58 89.42 262.55"/>
+        </g>
+        <rect class="cls-4" x="89.62" y="89.62" width="140.76" height="140.76" rx="12.54" ry="12.54"/>
+        <g>
+          <rect class="cls-1" x="132.87" y="139.57" width="54.26" height="5.46"/>
+          <rect class="cls-1" x="132.87" y="148.42" width="42.6" height="5.46"/>
+          <rect class="cls-1" x="132.87" y="157.27" width="54.26" height="5.46"/>
+          <rect class="cls-1" x="132.87" y="166.12" width="48.96" height="5.46"/>
+          <rect class="cls-1" x="132.87" y="174.96" width="54.26" height="5.46"/>
+        </g>
+        <g>
+          <rect class="cls-3" x="200.64" y="255.68" width="6.88" height="6.88"/>
+          <rect class="cls-3" x="214.4" y="255.68" width="6.88" height="6.88"/>
+          <rect class="cls-3" x="228.16" y="255.68" width="6.88" height="6.88"/>
+          <rect class="cls-3" x="241.92" y="255.68" width="6.88" height="6.88"/>
+          <rect class="cls-3" x="255.68" y="255.68" width="6.88" height="6.88"/>
+          <rect class="cls-3" x="207.52" y="242.51" width="6.88" height="6.88"/>
+          <rect class="cls-3" x="221.28" y="242.51" width="6.88" height="6.88"/>
+          <rect class="cls-3" x="235.04" y="242.51" width="6.88" height="6.88"/>
+          <rect class="cls-3" x="248.8" y="242.51" width="6.88" height="6.88"/>
+        </g>
+        <g>
+          <rect class="cls-3" x="255.68" y="98.72" width="6.88" height="6.88" transform="translate(156.95 361.28) rotate(-90)"/>
+          <rect class="cls-3" x="255.68" y="84.96" width="6.88" height="6.88" transform="translate(170.71 347.52) rotate(-90)"/>
+          <rect class="cls-3" x="255.68" y="71.2" width="6.88" height="6.88" transform="translate(184.47 333.76) rotate(-90)"/>
+          <rect class="cls-3" x="255.68" y="57.45" width="6.88" height="6.88" transform="translate(198.23 320) rotate(-90)"/>
+          <rect class="cls-3" x="242.51" y="78.08" width="6.88" height="6.88" transform="translate(164.43 327.48) rotate(-90)"/>
+          <rect class="cls-3" x="242.51" y="64.32" width="6.88" height="6.88" transform="translate(178.19 313.72) rotate(-90)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

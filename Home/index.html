@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Server Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="images/server-icon.png">
+</head>
+<body>
+
+  <div class="header-row">
+    <div class="title">
+      <img src="images/servergray-icon.png" alt="Server Icon" />
+      <span>Server Home</span>
+    </div>
+    <div class="time-display" id="time"></div>
+  </div>
+
+  <div class="panels">
+    <button type="button" class="collapsible"><img src="images/collapse-image.png" alt="collapse"></button>
+    <div class="content">
+      <div class="category-text-base">Monitor</div>
+      <div class="category-text">Monitor</div>
+
+      <div class="monitor">
+        <div class="m-text">Chip<br>Temp</div>
+        <div id="mbt" class="m-value"></div>
+        <div class="m-unity">C</div>
+      </div>
+
+      <div class="monitor">
+        <div class="m-text">CPU<br>Temp</div>
+        <div id="cput" class="m-value"></div>
+        <div class="m-unity">C</div>
+      </div>
+
+      <div class="monitor">
+        <div class="m-text">CPU<br>Load</div>
+        <div id="cpul" class="m-value"></div>
+        <div class="m-unity">%</div>
+      </div>
+
+      <div class="monitor">
+        <div class="m-text">GPU<br>Load</div>
+        <div id="gpul" class="m-value"></div>
+        <div class="m-unity">%</div>
+      </div>
+
+      <div class="monitor">
+        <div class="m-text">Mem<br>Used</div>
+        <div id="meml" class="m-value"></div>
+        <div class="m-unity">%</div>
+      </div>
+
+      <div class="monitor">
+        <div class="m-text">V Mem<br>Load</div>
+        <div id="vmeml" class="m-value"></div>
+        <div class="m-unity">%</div>
+      </div>
+
+      <div class="monitor">
+        <div class="m-text">SSD<br>Temp</div>
+        <div id="ssdt" class="m-value"></div>
+        <div class="m-unity">C</div>
+      </div>
+
+      <div class="monitor">
+        <div class="m-text">SSD<br>Used</div>
+        <div id="ssdl" class="m-value"></div>
+        <div class="m-unity">%</div>
+      </div>
+
+      <div class="monitor">
+        <div class="m-text">WiFi<br>Up</div>
+        <div id="wifiu" class="m-value"></div>
+        <div id="wifiu-u" class="m-unity"></div>
+      </div>
+
+      <div class="monitor">
+        <div class="m-text">WiFi<br>Down</div>
+        <div id="wifid" class="m-value"></div>
+        <div id="wifid-u" class="m-unity"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="panels">
+    <button type="button" class="collapsible"><img src="images/collapse-image.png" alt="collapse"></button>
+    <div class="content">
+        <div class="category-text-base">Section 1</div>
+        <div class="category-text">Section 1</div>
+
+        <a class="project-link" href="http://ip:port">
+          <img src="images/first-icon.png" alt="First Application">
+          <div class="text">
+            <span>First</span>
+          </div>
+        </a>
+
+        <a class="project-link" href="http://ip:port">
+          <div class="detail">tool tip info here</div>
+          <div class="feature-icons">
+            <img src="images/different-port.png" alt="Different Port">
+            <img src="images/different-ip.png" alt="Different IP">
+            <img src="images/external-site.png" alt="External Site">
+            <img src="images/new-page.png" alt="New Page">
+          </div>
+          <div id="second-timeout" class="timeout"></div>
+          <img src="images/second-icon.png" alt="Second Application">
+          <div class="text">
+            <span>Second<br>Application</span>
+            <span class="widget" id="n-second">widget info here</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+  <div class="panels">
+    <button type="button" class="collapsible"><img src="images/collapse-image.png" alt="collapse"></button>
+      <div class="content">
+        <div class="category-text-base">Section 2</div>
+        <div class="category-text">Section 2</div>
+
+        <a class="project-link" href="http://ip:port">
+          <div class="detail">tool tip info here</div>
+          <div class="feature-icons">
+            <img src="images/different-port.png" alt="Different Port">
+            <img src="images/different-ip.png" alt="Different IP">
+            <img src="images/external-site.png" alt="External Site">
+            <img src="images/new-page.png" alt="New Page">
+          </div>
+          <div id="third-timeout" class="timeout"></div>
+          <img src="images/third-icon.png" alt="Third Application">
+          <div class="text">
+            <span>Third<br>Application</span>
+            <span class="widget" id="n-third">updated by JS</span>
+          </div>
+        </a>
+
+        <a class="project-link" href="http://ip:port" target="_blank">
+          <div class="detail">tool tip info here</div>
+          <div class="feature-icons">
+            <img src="images/new-page.png" alt="New Page">
+            <img src="images/different-port.png" alt="Different Port">
+          </div>  
+          <img src="images/fourth-icon.png" alt="Fourth Application">
+          <div class="text">
+            <span>Fourth<br>Application</span>
+            <span class="widget" id="n-fourth">widget info here</span>
+          </div>
+        </a>  
+
+      </div>
+    </div>
+
+</body>
+</html>
+
+<script>
+document.getElementById("n-second").textContent = "Replaced by JS"
+document.getElementById("n-third").textContent = "Replaced by JS"
+document.getElementById("n-fourth").textContent = "Replaced by JS"
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight == "0px"){
+      content.style.maxHeight = "fit-content";
+      content.style.paddingTop = "40px";
+      content.style.paddingBottom = "20px";
+    } else {
+      content.style.maxHeight = "0px";
+      content.style.paddingTop = "50px";
+      content.style.paddingBottom = "0px";
+    }
+  });
+}
+
+function updateTime() {
+  const now = new Date();
+  const formattedDate = now.toLocaleDateString("pt-br", { timeZone: 'America/Recife', hour12: false });
+  const formattedTime = now.toLocaleTimeString("pt-br", { hour12: false });
+  document.getElementById("time").textContent = `${formattedDate}\n${formattedTime}`;
+}  
+
+const url = "http://ip:port/data.json";
+async function getData() {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+    
+    const json = await response.json();
+    const server = json.Children[0]
+
+    var MtempV = server.Children[0].Children[0].Children[1].Children[0].Value;
+    document.getElementById("mbt").textContent = `${MtempV.slice(0, -5)}`;
+
+    var CtempV = server.Children[1].Children[3].Children[0].Value;
+    document.getElementById("cput").textContent = `${CtempV.slice(0, -5)}`;
+
+    var CloadV = server.Children[1].Children[4].Children[0].Value;
+    document.getElementById("cpul").textContent = `${CloadV.slice(0, -4)}`;
+
+    var LGPUV = server.Children[3].Children[1].Children[0].Value;
+    document.getElementById("gpul").textContent = `${LGPUV.slice(0, -4)}`;
+
+    var MmemV = server.Children[2].Children[0].Children[0].Value;
+    document.getElementById("meml").textContent = `${MmemV.slice(0, -4)}`;
+
+    var VmemV = server.Children[2].Children[0].Children[1].Value;
+    document.getElementById("vmeml").textContent = `\n${VmemV.slice(0, -4)}`;
+
+    var HtempV = server.Children[4].Children[0].Children[0].Value;
+    document.getElementById("ssdt").textContent = `${HtempV.slice(0, -5)}`;
+
+    var HloadV = server.Children[4].Children[1].Children[0].Value;
+    document.getElementById("ssdl").textContent = `${HloadV.slice(0, -4)}`;
+
+    var WuplV = server.Children[11].Children[2].Children[0].Value;
+    document.getElementById("wifiu").textContent = `${WuplV.slice(0, -7)}`;
+    document.getElementById("wifiu-u").textContent = `${WuplV[WuplV.length - 4]}`;
+
+    var WdowV = server.Children[11].Children[2].Children[1].Value;
+    document.getElementById("wifid").textContent = `${WdowV.slice(0, -7)}`;
+    document.getElementById("wifid-u").textContent = `${WdowV[WdowV.length - 4]}`;
+
+} catch (error) {
+    console.error(error.message);
+  }
+}
+
+async function checkServiceStatus(service, url) {
+  document.getElementById(service).style.backgroundColor = "#ffffff33"
+  try {
+    const response = await fetch(url, {mode: 'no-cors', signal: AbortSignal.timeout(5000)});
+    if (response) {
+      document.getElementById(service).style.backgroundColor = "#00000000"
+      return true;
+    } else {
+      return false;
+    }
+  } catch (e) {
+      if (e.name === "TimeoutError") {
+          document.getElementById(service).style.backgroundColor = "#00000088"
+        }
+      }
+    }
+
+function check_health() {
+  checkServiceStatus('second-timeout', 'http://ip:port');
+  checkServiceStatus('third-timeout', 'http://ip:port');
+  checkServiceStatus('fourth-timeout', 'http://ip:port');
+}
+
+function runOnInterval() {
+  updateTime();
+  getData();
+}
+
+setInterval(runOnInterval, 1000);
+setInterval(check_health, 60000)
+
+check_health()
+runOnInterval();
+</script>

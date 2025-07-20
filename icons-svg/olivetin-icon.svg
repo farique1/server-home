@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 320">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a00;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-5 {
+        fill: #588000;
+      }
+
+      .cls-6 {
+        isolation: isolate;
+      }
+
+      .cls-7 {
+        fill: #72b7f4;
+      }
+
+      .cls-8 {
+        fill: #999;
+      }
+
+      .cls-9 {
+        fill: url(#linear-gradient-3);
+        mix-blend-mode: multiply;
+        opacity: .64;
+      }
+
+      .cls-10 {
+        fill: url(#linear-gradient-4);
+        mix-blend-mode: soft-light;
+        opacity: .71;
+      }
+
+      .cls-11 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="-775.69" cy="-340.03" fx="-775.69" fy="-340.03" r="46.81" gradientTransform="translate(4038.44 1860.13) scale(5)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#2d5a5c"/>
+    </radialGradient>
+    <linearGradient id="linear-gradient" x1="98.62" y1="106.06" x2="225.45" y2="106.06" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#72b7f4"/>
+      <stop offset="1" stop-color="#72b7f4"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="98.62" y1="63.86" x2="225.45" y2="63.86" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e6e6e6"/>
+      <stop offset=".85" stop-color="#ababab"/>
+      <stop offset="1" stop-color="#a1a1a1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="98.62" y1="166.77" x2="225.45" y2="166.77" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000" stop-opacity="0"/>
+      <stop offset=".92" stop-color="#000" stop-opacity=".83"/>
+      <stop offset="1" stop-color="#000"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="89.68" y1="166.77" x2="142.42" y2="166.77" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".06" stop-color="#fff" stop-opacity=".02"/>
+      <stop offset=".11" stop-color="#fff" stop-opacity=".06"/>
+      <stop offset=".17" stop-color="#fff" stop-opacity=".14"/>
+      <stop offset=".23" stop-color="#fff" stop-opacity=".25"/>
+      <stop offset=".29" stop-color="#fff" stop-opacity=".4"/>
+      <stop offset=".35" stop-color="#fff" stop-opacity=".57"/>
+      <stop offset=".41" stop-color="#fff" stop-opacity=".78"/>
+      <stop offset=".46" stop-color="#fff"/>
+      <stop offset=".55" stop-color="#fff" stop-opacity=".74"/>
+      <stop offset=".64" stop-color="#fff" stop-opacity=".52"/>
+      <stop offset=".72" stop-color="#fff" stop-opacity=".33"/>
+      <stop offset=".81" stop-color="#fff" stop-opacity=".19"/>
+      <stop offset=".88" stop-color="#fff" stop-opacity=".08"/>
+      <stop offset=".95" stop-color="#fff" stop-opacity=".02"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g class="cls-6">
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="Layer_1-2" data-name="Layer 1">
+        <g>
+          <path class="cls-4" d="M320,320H0V0h320v320Z"/>
+          <g>
+            <path id="rect1469-6" class="cls-7" d="M99.06,176.4l62.41,9.49,63.99-9.49v73.88s-1.06,18.28-63.73,18.95c-62.67.67-62.67-18.95-62.67-18.95v-73.88Z"/>
+            <path id="rect1469-7" class="cls-3" d="M98.62,133.29l62.62,6.9,64.21-6.9v55.43s-1.06,11.59-63.95,12.07c-62.89.49-62.88-12.07-62.88-12.07v-55.43Z"/>
+            <path id="rect1469" class="cls-11" d="M98.62,64.3s8.63,10.64,62.62,10.64c56.68,0,64.21-10.64,64.21-10.64v68.99s-1.06,13.93-63.95,14.52c-62.89.58-62.88-14.52-62.88-14.52v-68.99Z"/>
+            <ellipse id="path1436" class="cls-5" cx="162.73" cy="172.23" rx="45.23" ry="32.11" transform="translate(-63.3 243.31) rotate(-64.08)"/>
+            <path id="path1436-5" class="cls-1" d="M170.33,140.23c-3.13-5.57-1-10.25,4.78-10.47,5.77-.22,12.99,4.12,16.13,9.68s1,10.25-4.78,10.47c-5.77.22-12.99-4.12-16.13-9.68Z"/>
+            <ellipse id="path1440" class="cls-2" cx="162.04" cy="63.86" rx="63.42" ry="15.39"/>
+            <path id="path1436-3" class="cls-8" d="M128.98,56.5c7.65-.48,10.26,2.2,11.03,5.89s-.4,7.43-8.05,7.91c-3.53.22-9.66-1.15-12.32-2.05-3.12-1.05-6.91-2.13-7.33-4.12-.41-1.96,2.55-3.07,5.08-4.47,2.23-1.24,8-2.94,11.59-3.16h0Z"/>
+          </g>
+          <path class="cls-9" d="M161.24,74.94c-54,0-62.62-10.64-62.62-10.64v124.42s0,.46.44,1.19v60.37s0,19.62,62.67,18.95c62.67-.67,63.73-18.95,63.73-18.95V64.3s-7.53,10.64-64.21,10.64Z"/>
+          <path class="cls-10" d="M161.24,74.94c-54,0-62.62-10.64-62.62-10.64v124.42s0,.46.44,1.19v60.37s0,19.62,62.67,18.95c62.67-.67,63.73-18.95,63.73-18.95V64.3s-7.53,10.64-64.21,10.64Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
